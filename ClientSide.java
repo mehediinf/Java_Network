@@ -10,6 +10,8 @@ public class ClientSide {
         
         String serverAddress = "127.0.0.1";
         int port = 1234;
+while (true) {
+    
 
        try (Socket socket = new Socket(serverAddress,port);
        PrintWriter out = new PrintWriter(socket.getOutputStream(),true);
@@ -25,7 +27,7 @@ public class ClientSide {
        } catch (Exception e) {
         // TODO: handle exception
        } 
-
+    }
 
     }
 }
